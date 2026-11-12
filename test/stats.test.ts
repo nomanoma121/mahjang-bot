@@ -7,7 +7,7 @@ import {
 } from "../src/lib/stats";
 
 describe("aggregateStats", () => {
-  test("対戦数・平均順位・スコア・順位率を集計する", () => {
+  test("対戦数・平均順位・点数・順位率を集計する", () => {
     const stats = aggregateStats([
       { rank: 1, score: 45_000 },
       { rank: 2, score: 30_000 },

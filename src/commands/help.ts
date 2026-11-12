@@ -34,7 +34,7 @@ export async function execute(interaction: ChatInputCommandInteraction): Promise
       {
         name: "/ranking [sort] [period] [min_games]",
         value:
-          "サーバー内ランキングを表示します。平均順位・平均スコア・合計スコア・1位率・対戦数で並べ替えられます。",
+          "サーバー内ランキングを表示します。平均順位・平均点数・合計点数・1位率・対戦数で並べ替えられます。",
       },
       {
         name: "/history [user] [limit]",

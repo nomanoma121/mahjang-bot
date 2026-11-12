@@ -15,8 +15,8 @@ type RankingSort = "avg_rank" | "avg_score" | "total_score" | "first_rate" | "ga
 
 const SORT_LABELS: Record<RankingSort, string> = {
   avg_rank: "平均順位",
-  avg_score: "平均スコア",
-  total_score: "合計スコア",
+  avg_score: "平均点数",
+  total_score: "合計点数",
   first_rate: "1位率",
   games: "対戦数",
 };
@@ -43,8 +43,8 @@ export const data = new SlashCommandBuilder()
       .setDescription("並び順（省略時は平均順位）")
       .addChoices(
         { name: "平均順位", value: "avg_rank" },
-        { name: "平均スコア", value: "avg_score" },
-        { name: "合計スコア", value: "total_score" },
+        { name: "平均点数", value: "avg_score" },
+        { name: "合計点数", value: "total_score" },
         { name: "1位率", value: "first_rate" },
         { name: "対戦数", value: "games" },
       ),

@@ -15,7 +15,7 @@ export function formatScore(score: number): string {
   return score.toLocaleString("ja-JP");
 }
 
-/** 合計スコアなど符号を出したい数値 */
+/** 合計点数など符号を出したい数値 */
 export function formatSignedScore(score: number): string {
   const rounded = Math.round(score);
   if (rounded > 0) return `+${rounded.toLocaleString("ja-JP")}`;

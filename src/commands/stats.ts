@@ -83,7 +83,7 @@ export async function execute(interaction: ChatInputCommandInteraction): Promise
         inline: true,
       },
       {
-        name: "スコア",
+        name: "点数",
         value: `合計 **${formatScore(stats.totalScore)}点**\n平均 **${formatAverageScore(stats.avgScore)}点**`,
         inline: true,
       },
